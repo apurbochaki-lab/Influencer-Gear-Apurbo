@@ -1,9 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+.manrope-font {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    /* margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Common Styles */
@@ -19,6 +34,7 @@
     color: #3A3A3A;
 }
 .common-btn{
+    margin-top: 16px;
     background-color: #E02C6D;
     color: white;
     border: none;
@@ -90,6 +106,7 @@
 }
 .hero-image{
     /* border: 1px solid blue; */
+    margin-top: 50px;
     width: 475px;
     position: relative;
 }
@@ -114,19 +131,19 @@
 }
 
 /* Sponsors Section */
-.sponsors-container{
-    /* border: 1px solid tomato; */
-}
 .sponsors{
-    border: 1px solid rgba(211, 211, 211, 0.432);
+    /* border: 1px solid tomato; */
+    margin-top: 100px;
+    
+}
+.sponsors-container{
+    border: 1px solid rgba(211, 211, 211, 0.432);  
     max-width: 1100px;
     margin: 0 auto;
-    margin-top: 100px;
     padding: 35px 60px;
-
-    /* display: grid;
+    text-align: center;
+    display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 61px; */
 }
 .sponsors img{
     margin-right: 61px;
@@ -239,6 +256,40 @@
     box-shadow: 2px 5px 10px rgb(98, 94, 94);
 }
 
+/* Footer Section */
+footer{
+    margin-top: 100px;
+    background-color: #0a0826;
+    /* border: 1px solid rgba(250, 128, 114, 0); */
+}
+.footer-container{
+    width: 262px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+.footer-copyright{
+    margin-top: 3px;
+    font-size: 0.8rem;
+    line-height: 24px;
+    color: #D9DBE1;
+    margin-bottom: 17px;
+}
+.footer-copyright small{
+    font-weight: 700;
+}
+.icon-container a{
+    color: white;
+    background-color: #22213c;
+    padding: 4px 5px;
+    border-radius: 50%;
+}
+
 
 /* Mobile Responsive */
 @media screen and (max-width: 576px) {
@@ -265,8 +316,10 @@
     .join-now{
         margin-bottom: 30px;
     }
-    /* .sponsors{
-        grid-template-columns: repeat(2, 1fr);
-    } */
+    .sponsors{
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: repeat(2, 100px); */
+    }
+   
 
 }
