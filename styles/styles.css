@@ -109,9 +109,6 @@
     font-weight: 700;
     margin-bottom: 16px;
 }
-.hero-description{
-    /* margin-bottom: 16px; */
-}
 
 /* Sponsors Section */
 .sponsors-container{
@@ -123,6 +120,10 @@
     margin: 0 auto;
     margin-top: 100px;
     padding: 35px 60px;
+
+    /* display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 61px; */
 }
 .sponsors img{
     margin-right: 61px;
@@ -140,10 +141,9 @@
     /* border: 1px solid salmon; */
     max-width: 1047px;
     margin: 0 auto;
-    display: flex;
-    gap: 25px;
-    /* Wrap working as auto responsive */
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     position: relative;
 }
 .card{
@@ -207,5 +207,11 @@
         margin-top: 20px;
         width: 100%;
     }
+    .cards-container{
+        grid-template-columns: 1fr;
+    }
+    /* .sponsors{
+        grid-template-columns: repeat(2, 1fr);
+    } */
 
 }
