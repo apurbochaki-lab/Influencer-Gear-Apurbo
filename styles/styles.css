@@ -26,9 +26,11 @@
     padding: 10px 24px;
     font-size: 1rem;
     font-weight: 700;
+    cursor: pointer;
 }
 .common-btn:hover{
-
+    background-color: #ff0862;
+    box-shadow: 2px 5px 10px rgb(98, 94, 94);
 }
 
 /* .btn-2{
@@ -79,6 +81,7 @@
     margin: 0 auto;
     gap: 8.1rem;
     /* border: 1px solid red; */
+    padding: 0 20px;
 }
 .hero-text{
     /* border: 1px solid steelblue; */
@@ -190,13 +193,59 @@
     color: rgba(120, 120, 133, 1);   
 }
 
+/* Featured Section */
+.featured{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.featured-container{
+    margin-top: 100px;
+    display: flex;
+    gap: 96px;
+    align-items: center;
+    /* border: 1px solid salmon; */
+}
+.featured-text{
+    max-width: 610px;
+    /* border: 1px solid blue; */
+
+}
+.featured-title{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #0A0826;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.featured-description{
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 16px;
+}
+.join-now{
+    background-color: #E02C6D;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+}
+.join-now:hover{
+    background-color: #ff0862;
+    box-shadow: 2px 5px 10px rgb(98, 94, 94);
+}
+
 
 /* Mobile Responsive */
 @media screen and (max-width: 576px) {
     .navbar, .nav-links{
         flex-direction: column;
     }
-    .hero{
+    .hero, .featured-container{
         flex-direction: column-reverse;
         gap: 10px;
     }
@@ -209,6 +258,12 @@
     }
     .cards-container{
         grid-template-columns: 1fr;
+    }
+    .featured-container{
+        text-align: center;
+    }
+    .join-now{
+        margin-bottom: 30px;
     }
     /* .sponsors{
         grid-template-columns: repeat(2, 1fr);
