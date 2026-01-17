@@ -144,9 +144,10 @@
     text-align: center;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    gap: 61px;
 }
 .sponsors img{
-    margin-right: 61px;
+    /* margin-right: 61px; */
 }
 
 /* Cards Section */
@@ -317,9 +318,16 @@ footer{
         margin-bottom: 30px;
     }
     .sponsors{
-        grid-template-columns: repeat(3, 1fr);
-        /* grid-template-rows: repeat(2, 100px); */
+        width: 100%;
     }
+    .sponsors-container{
+        gap: 5px;
+        padding: 0;
+        border: none;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 70px);
+    }
+    
    
 
 }
